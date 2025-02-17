@@ -4,7 +4,7 @@ import React from 'react'
 import { BiHomeAlt } from 'react-icons/bi'
 import { IoChatbubbleEllipses } from 'react-icons/io5'
 
-const Navbar = (props: {}) => {
+const Navbar = () => {
   const router = useRouter()
   const OnNav = () => router.push('/')
   return (

@@ -1,7 +1,7 @@
 import { GiSeaDragon } from "react-icons/gi";
 import { BiSolidLeaf, BiSolidVial, BiMeteor, BiCloud, BiDroplet, BiBug, BiWorld, BiBoltCircle, BiCube, BiMale, BiDumbbell, BiShow, BiRocket, BiGhost, BiMagnet, BiCubeAlt, BiBrightness } from "react-icons/bi";
 
-const ColorType = ({ name, size }: { name: string, size?: number }) => {
+const ColorType = ({ name }: { name: string, size?: number }) => {
   let icon: React.ReactElement = <></>
   let classStyle: string = ""
 

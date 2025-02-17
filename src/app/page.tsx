@@ -1,7 +1,5 @@
 "use client"
 import Image from "next/image";
-import ThemeToggle from "./components/ThemeToggle";
-
 import CardPokemon from "./components/CardPokemon";
 import { useEffect, useState } from "react";
 import { PokemonProps } from "./interface/Pokemon.interface";

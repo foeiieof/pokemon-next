@@ -52,7 +52,7 @@ const PokemonPage = ({ params }: { params: { slug: string } }) => {
                     className="cursor-pointer hover:scale-[1.03] transition-transform ease-in-out duration-300 relative w-[160px] h-[180px] bg-zinc-100/30 px-1 rounded-md border flex flex-col justify-around items-center ">
                     <div className="absolute -top-1 bg-zinc-200/95 border right-2 rounded-b-md px-2 text-white/70">{p.number}</div>
                     <div className="w-full h-[70%] flex justify-center items-center border rounded-md bg-white">
-                      <Image src={p.image} width={70} height={70} className="w-[100px] h-[100px]" alt={p.name} />
+                      <Image src={p.image} width={70} height={70} className="w-[100px] h-[100px]" alt={p.name} onLoad={() => setLoadImg(true)} />
                     </div>
                     <div className="w-full flex flex-row justify-evenly items-center">
                       <span className="font-bold text-[14px] ">{p.name}</span>
