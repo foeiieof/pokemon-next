@@ -19,7 +19,7 @@ const PokemonId = React.memo(({ name }: { name: string }) => {
   useEffect(() => {
     if (data?.pokemon && pokemon?.id !== data.pokemon.id) setPokemon(data.pokemon)
   }, [data, pokemon])
-
+  console.log(pokemon)
   return (
     <div className="w-[70vw] sm:h-[80vh] h-full bg-white/60 border rounded-xl  flex  flex-col sm:flex-row gap-8 row-start-2 justify-center items-start p-6">
       <div className="w-full sm:w-[70%] p-4 gap-2 h-full shadow-md flex flex-col justify-center items-center bg-zinc-100/20 rounded-md border border-slate-300/60">

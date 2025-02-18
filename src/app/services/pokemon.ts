@@ -34,6 +34,20 @@ export const GET_POKEMON_NAME = gql`
       maxCP
       maxHP
       image
+      evolutions{
+        id
+        number
+        name
+        classification
+        types
+        resistant
+        weaknesses
+        fleeRate
+        maxCP
+        maxHP
+        image
+      }
+
     }
   }
 `
@@ -71,6 +85,19 @@ export const GET_POKEMON_ID = gql`
       maxCP
       maxHP
       image
+      evolutions{
+        id
+        number
+        name
+        classification
+        types
+        resistant
+        weaknesses
+        fleeRate
+        maxCP
+        maxHP
+        image
+      }
     }
   }
 `
