@@ -4,9 +4,9 @@ import { useSuspenseQuery } from '@apollo/client';
 import CardPokemon from './CardPokemon';
 import { GET_POKEMON_ALL } from '../services/pokemon';
 
-const PokemonList = () => {
+const PokemonList = ({ list }: { list: number }) => {
   const [pokemons, setPokemons] = useState<PokemonProps[]>([])
-  const { data }: { data: { pokemons: PokemonProps[] } } = useSuspenseQuery(GET_POKEMON_ALL, { variables: { first: 10 } })
+  const { data }: { data: { pokemons: PokemonProps[] } } = useSuspenseQuery(GET_POKEMON_ALL, { variables: { first: list } })
   useEffect(() => {
     if (data.pokemons && !pokemons) setPokemons(data.pokemons)
   }, [data, pokemons])
