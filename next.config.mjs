@@ -6,6 +6,10 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'img.pokemondb.net',
       },
+      {
+        protocol: 'https',
+        hostname: 'https://vercel.app'
+      }
     ],
   }
 }

@@ -33,6 +33,7 @@ const CardPokemon = ({ charactor }: { charactor: PokemonProps }) => {
           height={90}
           alt={charactor.name || ".."}
           onLoad={() => setLoadImg(true)}
+
           className={`w-auto max-w-[100px] h-auto ${loadImg ? "visible" : "invisible"}`}
         />
       </div>

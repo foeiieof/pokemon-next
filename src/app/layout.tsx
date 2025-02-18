@@ -1,7 +1,8 @@
-import localFont from "next/font/local";
 import "./globals.css";
-import { ThemeProvider } from "./context/ThemeContext";
+import localFont from "next/font/local";
 import Navbar from "./components/Navbar";
+import ApolloWrapper from "./context/ApolloWrapper";
+
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -18,14 +19,12 @@ const geistMono = localFont({
 export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <Navbar />
-        <ThemeProvider>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`} >
+        <ApolloWrapper>
+          <Navbar />
           {children}
-        </ThemeProvider>
+        </ApolloWrapper>
       </body>
-    </html>
+    </html >
   );
 }
