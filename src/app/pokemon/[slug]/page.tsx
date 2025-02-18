@@ -17,4 +17,5 @@ const PokemonPage = React.memo(({ params }: { params: { slug: string } }) => {
     </div>
   )
 })
+PokemonPage.displayName = "PokemonPage"
 export default PokemonPage

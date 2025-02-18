@@ -111,5 +111,5 @@ const PokemonId = React.memo(({ name }: { name: string }) => {
     </div>
   )
 })
-
+PokemonId.displayName = "PokemonId"
 export default PokemonId
